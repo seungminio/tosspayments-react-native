@@ -9,9 +9,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "@/*": ["src/*"]
     },
     "rootDir": "src",
     "skipLibCheck": true,
@@ -26,6 +24,6 @@
     "esm",
     "**/__tests__",
     "**/__test__",
-    "example",
+    "example"
   ]
 }
