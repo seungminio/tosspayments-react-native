@@ -87,7 +87,7 @@ const Payments: React.FC<PaymentsRequestOptions> = (options) => {
       sharedCookiesEnabled
       onShouldStartLoadWithRequest={onShouldStartLoadWithRequest}
       source={{
-        html: PAYMENTS_HTML_SOURCE,
+        uri: "https://smsmsmsmin.github.io/tosspayments-react-native/payments",
       }}
     />
   );
