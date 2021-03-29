@@ -42,4 +42,3 @@ buck-out/
 *.keystore
 
 lib/
-example/
