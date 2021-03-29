@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <script type="text/javascript">
+      (function () {
+        var search = location.search.substring(1);
+        window.ReactNativeWebView.postMessage(
+          '{"' +
+            decodeURI(search)
+              .replace(/"/g, '\\"')
+              .replace(/&/g, '","')
+              .replace(/=/g, '":"') +
+            '"}'
+        );
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,35 @@
+{
+  "name": "tosspayments-react-native",
+  "version": "1.0.0",
+  "description": "tosspayments module for react-native",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "typings": "lib/index.d.ts",
+  "repository": "https://github.com/smsmsmsmin/tosspayments-react-native",
+  "author": {
+    "name": "Seungmin Lee",
+    "email": "lee@seungmin.io"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-native": "^0.64.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-native": "^0.63.52",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "react-native-send-intent": "^1.2.3",
+    "react-native-webview": "^11.3.2"
+  },
+  "files": [
+    "lib",
+    "README.md"
+  ]
+}
