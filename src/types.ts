@@ -1,4 +1,6 @@
 export interface PaymentsRequestOptions {
+  clientKey: string;
+
   amount: number;
   orderid: string;
   orderName: string;

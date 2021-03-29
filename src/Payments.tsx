@@ -17,14 +17,14 @@ const Payments: React.FC<PaymentsRequestOptions> = (options) => {
     });
     if (Platform.OS === "android")
       return `window.onload = function() {
-          var clientKey = 'test_ck_Kma60RZblrqeByBbzGMrwzYWBn14';
+          var clientKey = '${options.clientKey}';
           var tossPayments = TossPayments(clientKey);
           tossPayments.requestPayment('카드', ${reqeustOptionsString});
         };
         true;
         `;
     return `(function() {
-          var clientKey = 'test_ck_Kma60RZblrqeByBbzGMrwzYWBn14';
+          var clientKey = '${options.clientKey}';
           var tossPayments = TossPayments(clientKey);
           tossPayments.requestPayment('카드', ${reqeustOptionsString});
         })();
