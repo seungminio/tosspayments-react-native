@@ -10,8 +10,10 @@ const Payments: React.FC<PaymentsRequestOptions> = (options) => {
   const initlizePaymentsPage = useMemo(() => {
     const reqeustOptionsString = JSON.stringify({
       ...options,
-      successUrl: "",
-      failUrl: "",
+      successUrl:
+        "https://smsmsmsmin.github.io/tosspayments-react-native/callback",
+      failUrl:
+        "https://smsmsmsmin.github.io/tosspayments-react-native/callback",
     });
     if (Platform.OS === "android")
       return `window.onload = function() {
