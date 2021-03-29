@@ -2,7 +2,7 @@ export interface PaymentsRequestOptions {
   clientKey: string;
 
   amount: number;
-  orderid: string;
+  orderId: string;
   orderName: string;
   cardCompany?: string;
   cardInstallmentPlan?: string;
